@@ -1,0 +1,15 @@
+D:\XCore\XCore\XCore.Repositories\obj\Debug\net5.0\XCore.Repositories.csproj.AssemblyReference.cache
+D:\XCore\XCore\XCore.Repositories\obj\Debug\net5.0\XCore.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+D:\XCore\XCore\XCore.Repositories\obj\Debug\net5.0\XCore.Repositories.AssemblyInfoInputs.cache
+D:\XCore\XCore\XCore.Repositories\obj\Debug\net5.0\XCore.Repositories.AssemblyInfo.cs
+D:\XCore\XCore\XCore.Repositories\obj\Debug\net5.0\XCore.Repositories.csproj.CoreCompileInputs.cache
+D:\XCore\XCore\XCore.Repositories\bin\Debug\net5.0\XCore.Repositories.deps.json
+D:\XCore\XCore\XCore.Repositories\bin\Debug\net5.0\XCore.Repositories.dll
+D:\XCore\XCore\XCore.Repositories\bin\Debug\net5.0\ref\XCore.Repositories.dll
+D:\XCore\XCore\XCore.Repositories\bin\Debug\net5.0\XCore.Repositories.pdb
+D:\XCore\XCore\XCore.Repositories\bin\Debug\net5.0\XCore.Entities.dll
+D:\XCore\XCore\XCore.Repositories\bin\Debug\net5.0\XCore.Entities.pdb
+D:\XCore\XCore\XCore.Repositories\obj\Debug\net5.0\XCore.Repositories.csproj.CopyComplete
+D:\XCore\XCore\XCore.Repositories\obj\Debug\net5.0\XCore.Repositories.dll
+D:\XCore\XCore\XCore.Repositories\obj\Debug\net5.0\ref\XCore.Repositories.dll
+D:\XCore\XCore\XCore.Repositories\obj\Debug\net5.0\XCore.Repositories.pdb

@@ -1,0 +1,12 @@
+D:\XCore\XCore\XCore.Entities\bin\Debug\net5.0\XCore.Entities.deps.json
+D:\XCore\XCore\XCore.Entities\bin\Debug\net5.0\XCore.Entities.dll
+D:\XCore\XCore\XCore.Entities\bin\Debug\net5.0\ref\XCore.Entities.dll
+D:\XCore\XCore\XCore.Entities\bin\Debug\net5.0\XCore.Entities.pdb
+D:\XCore\XCore\XCore.Entities\obj\Debug\net5.0\XCore.Entities.csproj.AssemblyReference.cache
+D:\XCore\XCore\XCore.Entities\obj\Debug\net5.0\XCore.Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\XCore\XCore\XCore.Entities\obj\Debug\net5.0\XCore.Entities.AssemblyInfoInputs.cache
+D:\XCore\XCore\XCore.Entities\obj\Debug\net5.0\XCore.Entities.AssemblyInfo.cs
+D:\XCore\XCore\XCore.Entities\obj\Debug\net5.0\XCore.Entities.csproj.CoreCompileInputs.cache
+D:\XCore\XCore\XCore.Entities\obj\Debug\net5.0\XCore.Entities.dll
+D:\XCore\XCore\XCore.Entities\obj\Debug\net5.0\ref\XCore.Entities.dll
+D:\XCore\XCore\XCore.Entities\obj\Debug\net5.0\XCore.Entities.pdb

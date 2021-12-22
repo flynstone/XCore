@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Api", "XCore.Api\XCore.Api.csproj", "{F3C4896E-55E7-4D05-BDCE-C648CE720181}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Entities", "XCore.Entities\XCore.Entities.csproj", "{CDF8D305-769A-4679-95B2-D3B512B81924}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.LoggerService", "XCore.LoggerService\XCore.LoggerService.csproj", "{59FBBBCD-46B5-47B0-83C5-82F15C121D60}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.EmailService", "XCore.EmailService\XCore.EmailService.csproj", "{921221B3-BB0B-4159-A218-1D781A5E244A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Repositories", "XCore.Repositories\XCore.Repositories.csproj", "{8BC3F87C-B874-4DE0-84BF-A458E020B89B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XCore.Idp", "XCore.Idp\XCore.Idp.csproj", "{E83B741A-EBE0-4F12-AC14-AB63A4AD562F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XCore.Client", "XCore.Client\XCore.Client.csproj", "{D5CA54D4-83BF-4D36-8856-895DBB5FFA9C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F3C4896E-55E7-4D05-BDCE-C648CE720181}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3C4896E-55E7-4D05-BDCE-C648CE720181}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3C4896E-55E7-4D05-BDCE-C648CE720181}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3C4896E-55E7-4D05-BDCE-C648CE720181}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDF8D305-769A-4679-95B2-D3B512B81924}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDF8D305-769A-4679-95B2-D3B512B81924}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDF8D305-769A-4679-95B2-D3B512B81924}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDF8D305-769A-4679-95B2-D3B512B81924}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59FBBBCD-46B5-47B0-83C5-82F15C121D60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59FBBBCD-46B5-47B0-83C5-82F15C121D60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59FBBBCD-46B5-47B0-83C5-82F15C121D60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59FBBBCD-46B5-47B0-83C5-82F15C121D60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{921221B3-BB0B-4159-A218-1D781A5E244A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{921221B3-BB0B-4159-A218-1D781A5E244A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{921221B3-BB0B-4159-A218-1D781A5E244A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{921221B3-BB0B-4159-A218-1D781A5E244A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BC3F87C-B874-4DE0-84BF-A458E020B89B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BC3F87C-B874-4DE0-84BF-A458E020B89B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BC3F87C-B874-4DE0-84BF-A458E020B89B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BC3F87C-B874-4DE0-84BF-A458E020B89B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E83B741A-EBE0-4F12-AC14-AB63A4AD562F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E83B741A-EBE0-4F12-AC14-AB63A4AD562F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E83B741A-EBE0-4F12-AC14-AB63A4AD562F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E83B741A-EBE0-4F12-AC14-AB63A4AD562F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5CA54D4-83BF-4D36-8856-895DBB5FFA9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5CA54D4-83BF-4D36-8856-895DBB5FFA9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5CA54D4-83BF-4D36-8856-895DBB5FFA9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5CA54D4-83BF-4D36-8856-895DBB5FFA9C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9B310826-E2AF-46E1-9047-A06FC509EA45}
+	EndGlobalSection
+EndGlobal

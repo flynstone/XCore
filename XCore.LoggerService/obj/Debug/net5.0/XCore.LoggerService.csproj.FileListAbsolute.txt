@@ -1,0 +1,12 @@
+D:\XCore\XCore\XCore.LoggerService\bin\Debug\net5.0\XCore.LoggerService.deps.json
+D:\XCore\XCore\XCore.LoggerService\bin\Debug\net5.0\XCore.LoggerService.dll
+D:\XCore\XCore\XCore.LoggerService\bin\Debug\net5.0\ref\XCore.LoggerService.dll
+D:\XCore\XCore\XCore.LoggerService\bin\Debug\net5.0\XCore.LoggerService.pdb
+D:\XCore\XCore\XCore.LoggerService\obj\Debug\net5.0\XCore.LoggerService.csproj.AssemblyReference.cache
+D:\XCore\XCore\XCore.LoggerService\obj\Debug\net5.0\XCore.LoggerService.GeneratedMSBuildEditorConfig.editorconfig
+D:\XCore\XCore\XCore.LoggerService\obj\Debug\net5.0\XCore.LoggerService.AssemblyInfoInputs.cache
+D:\XCore\XCore\XCore.LoggerService\obj\Debug\net5.0\XCore.LoggerService.AssemblyInfo.cs
+D:\XCore\XCore\XCore.LoggerService\obj\Debug\net5.0\XCore.LoggerService.csproj.CoreCompileInputs.cache
+D:\XCore\XCore\XCore.LoggerService\obj\Debug\net5.0\XCore.LoggerService.dll
+D:\XCore\XCore\XCore.LoggerService\obj\Debug\net5.0\ref\XCore.LoggerService.dll
+D:\XCore\XCore\XCore.LoggerService\obj\Debug\net5.0\XCore.LoggerService.pdb
