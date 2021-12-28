@@ -1,6 +1,6 @@
 # X-Core Web Api (Asp.Net Core C# Backend)
 
-Project still under development, built using Entity Framework code first
+Project still under development, MVC Project
 
 ## Documentation
 
@@ -13,3 +13,35 @@ Project still under development, built using Entity Framework code first
 ```diff
 - Will need to configure SPA for Front-End
 ```
+
+### Models (M)
+
+- Built with entity framework code first
+- Add migrations to MSSQL (Express)
+
+
+!["screenshot description"](./assets/model.png);
+
+!["screenshot description"](./assets/dataset.png);
+
+!["screenshot description"](./assets/migration.png);
+
+
+### Views (V)
+
+- Project being re-built with Angular
+
+
+### Controllers (C)
+
+- Working with data transfer objects, and nlog to keep records of errors
+
+!["screenshot description"](./assets/controller.png)
+
+### Swagger
+
+- More details comming..
+
+!["screenshot description"](./assets/swagger.png)
+
+

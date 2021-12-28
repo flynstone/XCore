@@ -21,7 +21,6 @@ namespace XCore.Entities.Models.Overtime
         [MaxLength(20)]
         public string CellPhone { get; set; }
 
-
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
         //           Foreign Table Relations             //
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
