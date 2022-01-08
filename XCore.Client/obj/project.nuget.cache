@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8JgFBuIuPT74N+6pSljIdzyxpxk3Tlb2quMgh6s7tDlxBPV6cIuK1RKJptt5WU5O5uIZobCYHNXdOnXm6LwstQ==",
+  "dgSpecHash": "VoFasT5WECgXVK5d44HTlCuGfR6PXkN2HqXU2yBXrLdIY9lr7IC72lF6Xdq5kBD/9WsvhgFByTQgZGGqTA0a9Q==",
   "success": true,
   "projectFilePath": "D:\\XCore\\XCore\\XCore.Client\\XCore.Client.csproj",
   "expectedPackageFiles": [
@@ -20,8 +20,7 @@
     "C:\\Users\\flyns\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.7.1\\microsoft.identitymodel.protocols.openidconnect.6.7.1.nupkg.sha512",
     "C:\\Users\\flyns\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.7.1\\microsoft.identitymodel.tokens.6.7.1.nupkg.sha512",
     "C:\\Users\\flyns\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.7.1\\system.identitymodel.tokens.jwt.6.7.1.nupkg.sha512",
-    "C:\\Users\\flyns\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512",
-    "C:\\Users\\flyns\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
+    "C:\\Users\\flyns\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }

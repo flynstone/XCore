@@ -17,7 +17,6 @@ D:\XCore\XCore\XCore.Client\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.d
 D:\XCore\XCore\XCore.Client\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 D:\XCore\XCore\XCore.Client\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 D:\XCore\XCore\XCore.Client\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
-D:\XCore\XCore\XCore.Client\obj\Debug\net5.0\XCore.Client.csproj.AssemblyReference.cache
 D:\XCore\XCore\XCore.Client\obj\Debug\net5.0\XCore.Client.GeneratedMSBuildEditorConfig.editorconfig
 D:\XCore\XCore\XCore.Client\obj\Debug\net5.0\XCore.Client.AssemblyInfoInputs.cache
 D:\XCore\XCore\XCore.Client\obj\Debug\net5.0\XCore.Client.AssemblyInfo.cs

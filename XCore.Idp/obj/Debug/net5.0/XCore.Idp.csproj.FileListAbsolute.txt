@@ -1,3 +1,4 @@
+D:\XCore\XCore\XCore.Idp\bin\Debug\net5.0\appsettings.json
 D:\XCore\XCore\XCore.Idp\bin\Debug\net5.0\XCore.Idp.exe
 D:\XCore\XCore\XCore.Idp\bin\Debug\net5.0\XCore.Idp.deps.json
 D:\XCore\XCore\XCore.Idp\bin\Debug\net5.0\XCore.Idp.runtimeconfig.json
@@ -82,8 +83,8 @@ D:\XCore\XCore\XCore.Idp\obj\Debug\net5.0\XCore.Idp.csproj.CoreCompileInputs.cac
 D:\XCore\XCore\XCore.Idp\obj\Debug\net5.0\XCore.Idp.MvcApplicationPartsAssemblyInfo.cache
 D:\XCore\XCore\XCore.Idp\obj\Debug\net5.0\XCore.Idp.RazorAssemblyInfo.cache
 D:\XCore\XCore\XCore.Idp\obj\Debug\net5.0\XCore.Idp.RazorAssemblyInfo.cs
-D:\XCore\XCore\XCore.Idp\obj\Debug\net5.0\staticwebassets\XCore.Idp.StaticWebAssets.Manifest.cache
 D:\XCore\XCore\XCore.Idp\obj\Debug\net5.0\scopedcss\bundle\XCore.Idp.styles.css
+D:\XCore\XCore\XCore.Idp\obj\Debug\net5.0\staticwebassets\XCore.Idp.StaticWebAssets.Manifest.cache
 D:\XCore\XCore\XCore.Idp\obj\Debug\net5.0\XCore.Idp.TagHelpers.input.cache
 D:\XCore\XCore\XCore.Idp\obj\Debug\net5.0\XCore.Idp.TagHelpers.output.cache
 D:\XCore\XCore\XCore.Idp\obj\Debug\net5.0\XCore.Idp.RazorCoreGenerate.cache
@@ -122,4 +123,3 @@ D:\XCore\XCore\XCore.Idp\obj\Debug\net5.0\XCore.Idp.dll
 D:\XCore\XCore\XCore.Idp\obj\Debug\net5.0\ref\XCore.Idp.dll
 D:\XCore\XCore\XCore.Idp\obj\Debug\net5.0\XCore.Idp.pdb
 D:\XCore\XCore\XCore.Idp\obj\Debug\net5.0\XCore.Idp.genruntimeconfig.cache
-D:\XCore\XCore\XCore.Idp\bin\Debug\net5.0\appsettings.json
