@@ -27,7 +27,6 @@ Project still under development, MVC Project
 
 !["screenshot description"](./assets/migration.png)
 
-!["screenshot description"](./XCore.Api/xcore-client/src/assets/img/authentication-cookie.png)
 
 ### Views (V)
 
@@ -39,6 +38,9 @@ Project still under development, MVC Project
 - Working with data transfer objects, and nlog to keep records of errors
 
 !["screenshot description"](./assets/controller.png)
+
+### External login provider (Google)
+!["screenshot description"](./XCore.Api/xcore-client/src/assets/img/authentication-cookie.png)
 
 ### Swagger
 
