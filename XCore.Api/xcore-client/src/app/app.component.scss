@@ -4,13 +4,17 @@ ul {
   list-style-type: none;
 }
 
+h1 {
+  
+}
+
 .container {
   display: flex;
   justify-content: center;
 }
 
 .mat-toolbar {
-  background: linear-gradient(to bottom, #333333,#03b881) !important;
+  background: linear-gradient(to bottom, #03b881, #333333) !important;
   justify-content: center;
   font-family: $header-font-family;
 }
