@@ -11,6 +11,7 @@ Project still under development, MVC Project
 - Configured SMTP (Mailkit) for generating email for authentication process
 
 ```diff
+- Front-End being rebuilt with Angular
 - Will need to configure SPA for Front-End
 ```
 
