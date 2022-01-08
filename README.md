@@ -21,13 +21,13 @@ Project still under development, MVC Project
 - Add migrations to MSSQL (Express)
 
 
-!["screenshot description"](./assets/model.png);
+!["screenshot description"](./assets/model.png)
 
-!["screenshot description"](./assets/dataset.png);
+!["screenshot description"](./assets/dataset.png)
 
-!["screenshot description"](./assets/migration.png);
+!["screenshot description"](./assets/migration.png)
 
-!["screenshot description"](./XCore.Api/xcore-client/src/assets/img/authentication-cookie.png);
+!["screenshot description"](./XCore.Api/xcore-client/src/assets/img/authentication-cookie.png)
 
 ### Views (V)
 
