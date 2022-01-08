@@ -1,6 +1,4 @@
 ﻿using AutoMapper;
-using System;
-using System.Linq.Expressions;
 using XCore.Entities.DataTransferObjects.Categories;
 using XCore.Entities.DataTransferObjects.Customers;
 using XCore.Entities.DataTransferObjects.Medias;
@@ -25,10 +23,10 @@ namespace XCore.Api.Extensions
             this.CreateMap<Category, CategoryDto>().ReverseMap();
             this.CreateMap<CategoryForCreationDto, Category>();
             this.CreateMap<CategoryForUpdateDto, Category>();
-            this.CreateMap<Media, MediaDto>().ForMember<string>((Expression<Func<MediaDto, string>>)(x => x.Category), (Action<IMemberConfigurationExpression<Media, MediaDto, string>>)(options => options.MapFrom<string>((Expression<Func<Media, string>>)(e => e.ItemCategory.Description))));
+            this.CreateMap<Media, MediaDto>().ForMember(x => x.Category, options => options.MapFrom(e => e.ItemCategory.Description));
             this.CreateMap<MediaForCreationDto, Media>();
             this.CreateMap<MediaForUpdateDto, Media>();
-            this.CreateMap<Rental, RentalDto>().ForMember<string>((Expression<Func<RentalDto, string>>)(x => x.Customer), (Action<IMemberConfigurationExpression<Rental, RentalDto, string>>)(options => options.MapFrom<string>((Expression<Func<Rental, string>>)(e => e.Customer.FirstName + (object)' ' + e.Customer.LastName)))).ForMember<string>((Expression<Func<RentalDto, string>>)(x => x.Media), (Action<IMemberConfigurationExpression<Rental, RentalDto, string>>)(options => options.MapFrom<string>((Expression<Func<Rental, string>>)(e => e.Media.ItemTitle)))).ForMember<string>((Expression<Func<RentalDto, string>>)(x => x.Category), (Action<IMemberConfigurationExpression<Rental, RentalDto, string>>)(options => options.MapFrom<string>((Expression<Func<Rental, string>>)(e => e.Media.ItemCategory.Description))));
+            this.CreateMap<Rental, RentalDto>().ForMember(x => x.Customer, options => options.MapFrom(e => e.Customer.FirstName + ' ' + e.Customer.LastName)).ForMember(x => x.Media, options => options.MapFrom(e => e.Media.ItemTitle)).ForMember(x => x.Category, options => options.MapFrom(e => e.Media.ItemCategory.Description));
             this.CreateMap<RentalForCreationDto, Rental>();
             this.CreateMap<RentalForUpdateDto, Rental>();
 

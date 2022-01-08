@@ -85,3 +85,9 @@ D:\XCore\XCore\XCore.Api\obj\Debug\net5.0\ref\XCore.Api.dll
 D:\XCore\XCore\XCore.Api\obj\Debug\net5.0\XCore.Api.pdb
 D:\XCore\XCore\XCore.Api\obj\Debug\net5.0\XCore.Api.genruntimeconfig.cache
 D:\XCore\XCore\XCore.Api\obj\Debug\net5.0\XCore.Api.MvcApplicationPartsAssemblyInfo.cs
+D:\XCore\XCore\XCore.Api\bin\Debug\net5.0\xcore-client\angular.json
+D:\XCore\XCore\XCore.Api\bin\Debug\net5.0\xcore-client\package-lock.json
+D:\XCore\XCore\XCore.Api\bin\Debug\net5.0\xcore-client\package.json
+D:\XCore\XCore\XCore.Api\bin\Debug\net5.0\xcore-client\tsconfig.app.json
+D:\XCore\XCore\XCore.Api\bin\Debug\net5.0\xcore-client\tsconfig.json
+D:\XCore\XCore\XCore.Api\bin\Debug\net5.0\xcore-client\tsconfig.spec.json

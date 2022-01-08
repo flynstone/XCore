@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <GoogleCloudPublishChoice>Gae</GoogleCloudPublishChoice>
+    <GoogleCloudPublishConfiguration>Release</GoogleCloudPublishConfiguration>
+    <GoogleKubernetesEnginePublishDeploymentName>xcore-api</GoogleKubernetesEnginePublishDeploymentName>
+    <GoogleKubernetesEnginePublishVersion>20211227t171159</GoogleKubernetesEnginePublishVersion>
+    <GoogleKubernetesEnginePublishReplicas>3</GoogleKubernetesEnginePublishReplicas>
+    <GoogleKubernetesEnginePublishExposeService>False</GoogleKubernetesEnginePublishExposeService>
+    <GoogleKubernetesEnginePublishExposePublicService>False</GoogleKubernetesEnginePublishExposePublicService>
+    <GoogleKubernetesEnginePublishOpenWebsite>False</GoogleKubernetesEnginePublishOpenWebsite>
+    <GoogleAppEnginePublishPromote>True</GoogleAppEnginePublishPromote>
+    <GoogleAppEnginePublishOpenWebsite>True</GoogleAppEnginePublishOpenWebsite>
+  </PropertyGroup>
+</Project>

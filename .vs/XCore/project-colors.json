@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "e83b741a-ebe0-4f12-ac14-ab63a4ad562f": {
+      "ProjectGuid": "e83b741a-ebe0-4f12-ac14-ab63a4ad562f",
+      "DisplayName": "XCore.Idp",
+      "ColorIndex": 0
+    },
+    "f3c4896e-55e7-4d05-bdce-c648ce720181": {
+      "ProjectGuid": "f3c4896e-55e7-4d05-bdce-c648ce720181",
+      "DisplayName": "XCore.Api",
+      "ColorIndex": 1
+    },
+    "d5ca54d4-83bf-4d36-8856-895dbb5ffa9c": {
+      "ProjectGuid": "d5ca54d4-83bf-4d36-8856-895dbb5ffa9c",
+      "DisplayName": "XCore.Client",
+      "ColorIndex": 2
+    },
+    "cdf8d305-769a-4679-95b2-d3b512b81924": {
+      "ProjectGuid": "cdf8d305-769a-4679-95b2-d3b512b81924",
+      "DisplayName": "XCore.Entities",
+      "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "921221b3-bb0b-4159-a218-1d781a5e244a": {
+      "ProjectGuid": "921221b3-bb0b-4159-a218-1d781a5e244a",
+      "DisplayName": "XCore.EmailService",
+      "ColorIndex": 4
+    }
+  },
+  "NextColorIndex": 5
+}

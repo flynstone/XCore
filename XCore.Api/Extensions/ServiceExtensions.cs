@@ -5,8 +5,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using XCore.Entities;
 using XCore.LoggerService;
 using XCore.Repositories;
@@ -63,7 +61,7 @@ namespace XCore.Api.Extensions
                     Title = "X-Core Api",
                     Version = "v1",
                     Description = "COMP200 && COMP266 Api Database by X-Core Web",
-                    TermsOfService = new Uri("https://x-coreweb.com/terms"),
+                    TermsOfService = new Uri("https://x-coreweb.com/terms-of-service"),
                     Contact = new OpenApiContact
                     {
                         Name = "Julien Lacroix",

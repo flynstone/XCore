@@ -3,7 +3,7 @@
     "XCore.Api": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
-      "launchBrowser": false,
+      "launchBrowser": true,
       "launchUrl": "swagger",
       "applicationUrl": "https://localhost:44369",
       "environmentVariables": {
