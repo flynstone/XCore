@@ -1,0 +1,59 @@
+<div class="container">
+  <div class="row my-5">
+      <div class="col-lg-12 col-md-12">
+          <!-- Card -->
+          <div class="row mt-4 mb-5" fxLayout fxLayoutAlign="center">
+              <h4 class="justify-content-center">Welcome</h4>
+          </div>
+
+          <div fxLayout="row" class="home-page">
+              <div fxLayout="row" fxFlex="100%" fxFlex.gt-sm="100%" class="mt-3 mb-5">
+                  <mat-card class="col-md-12">
+                      <div class="my-4">
+                          <p>This website was built for class (COMP214) Interactive Technologies.</p>
+
+                          <br>
+                          <p>Requirements were to create a 5 pages website with frames, including a permanent header,
+                              navigation
+                              menu (always displayed, here I added a functionality to close the sidebar with an
+                              animated icon) and a
+                              third frame into which the sub-pages load.</p>
+                          <br>
+                          <p>I have also added a theme customizer (cog icon in middle right), which allows user to
+                              toggle dark
+                              mode and change header color.</p>
+                          <br>
+                          <section *ngIf="isUserAuthenticated">
+                              <p>Technologies used as front-end: </p>
+                              <ul>
+                                  <li><a href="https://angular.io/">Angular 10</a></li>
+                                  <li><a href="https://mdbootstrap.com/">Material Design Bootstrap (MDB)</a></li>
+                                  <li><a href="https://material.angular.io/">Angular Material</a></li>
+                              </ul>
+                              <br>
+                              <p>Technologies used as back-end: </p>
+                              <ul>
+                                  <li><a
+                                          href="https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-3.1&tabs=visual-studio">ASP.NET
+                                          Core Web Api 5.0</a></li>
+                              </ul>
+                              <br>
+                              <p>Hosted through IIS on Windows Server 2019 Essentials</p>
+                              <br>
+                          </section>
+
+                          <p>Tested and displaying as expected on screen resolutions: </p>
+                          <ul>
+                              <li>3440 x 1440</li>
+                              <li>1920 x 1080</li>
+                          </ul>
+                          <br>
+
+                          <p>Author: Julien Lacroix</p>
+                      </div>
+                  </mat-card>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

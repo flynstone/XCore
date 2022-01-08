@@ -1,0 +1,39 @@
+@if index($xcore-icons-types, elastic) {
+    // Elastic
+    .xcore-icons--elastic {
+        .xcore-icons-inner {
+            top: $xcore-icons-layer-height / 2;
+            transition-duration: 0.275s;
+            transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            
+            &::before {
+                top: $xcore-icons-layer-height + $xcore-icons-layer-spacing;
+                transition: opacity 0.125s 0.275s ease;
+            }
+
+            &::after {
+                top: ($xcore-icons-layer-height * 2) + ($xcore-icons-layer-spacing * 2);
+                transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            }
+        }
+
+        &.is-active {
+            .xcore-icons-inner {
+                $y-offset: $xcore-icons-layer-spacing + $xcore-icons-layer-height;
+
+                transform: translate3d(0, $y-offset, 0) rotate(135deg);
+                transition-delay: 0.075s;
+
+                &::before {
+                    transition-delay: 0s;
+                    opacity: 0;
+                }
+
+                &::after {
+                    transform: translate3d(0, $y-offset * -2, 0) rotate(-270deg);
+                    transition-delay: 0.075s;
+                }
+            }
+        }
+    }
+}

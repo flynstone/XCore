@@ -1,0 +1,5 @@
+@include angular-material-theme($custom-theme);
+@mixin angular-material-theme($theme) {
+  @include mat-button-theme($theme);
+  @include mat-card-theme($theme);
+}

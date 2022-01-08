@@ -1,0 +1,89 @@
+// --------------------------------------------------
+// xcore-icons
+// --------------------------------------------------
+
+.xcore-icons {
+    padding: $xcore-icons-padding-y $xcore-icons-padding-x;
+    display: inline-block;
+    cursor: pointer;
+
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+
+    // Normalize (<button>)
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible;
+
+    &:hover {
+        @if $xcore-icons-hover-use-filter == true {
+            filter: $xcore-icons-hover-filter;
+        }
+        @else {
+            opacity: $xcore-icons-hover-opacity;
+        }
+    }
+
+    &.is-active {
+        &:hover {
+            @if $xcore-icons-hover-use-filter == true {
+                filter: $xcore-icons-active-hover-filter;
+            }
+            @else {
+                opacity: $xcore-icons-active-hover-opacity;
+            }
+        }
+
+        .xcore-icons-inner,
+        .xcore-icons-inner::before,
+        .xcore-icons-inner::after {
+            background-color: $xcore-icons-active-layer-color;
+        }
+    }
+}
+
+
+.xcore-icons-box {
+    width: $xcore-icons-layer-width;
+    height: $xcore-icons-layer-height * 3 + $xcore-icons-layer-spacing * 2;
+    display: inline-block;
+    position: relative;
+}
+
+.xcore-icons-inner {
+    display: block;
+    top: 50%;
+    margin-top: $xcore-icons-layer-height / -2;
+    
+    &,
+    &::before,
+    &::after {
+        width: $xcore-icons-layer-width;
+        height: $xcore-icons-layer-height;
+        background-color: $xcore-icons-layer-color;
+        border-radius: $xcore-icons-layer-border-radius;
+        position: absolute;
+        transition-property: transform;
+        transition-duration: 0.15s;
+        transition-timing-function: ease;
+    }
+    
+    &::before,
+    &::after {
+        content: "";
+        display: block;
+    }
+    
+    &::before {
+        top: ($xcore-icons-layer-spacing + $xcore-icons-layer-height) * -1;
+    }
+    
+    &::after {
+        bottom: ($xcore-icons-layer-spacing + $xcore-icons-layer-height) * -1;
+    }
+}

@@ -1,0 +1,36 @@
+@if index($xcore-icons-types, slider) {
+    // Slider
+    .xcore-icons-slider {
+        .xcore-icons-inner {
+            top: $xcore-icons-layer-height / 2;
+
+            &::before {
+                top: $xcore-icons-layer-height + $xcore-icons-layer-spacing;
+                transition-property: transform, opacity;
+                transition-timing-function: ease;
+                transition-duration: 0.15s;
+            }
+
+            &::after {
+                top: ($xcore-icons-layer-height * 2) + ($xcore-icons-layer-spacing * 2);
+            }
+        }
+
+        &.is-active {
+            .xcore-icons-inner {
+                $y-offset: $xcore-icons-layer-spacing + $xcore-icons-layer-height;
+
+                transform: translate3d(0, $y-offset, 0) rotate(45deg);
+
+                &::before {
+                    transform: rotate(-45deg) translate3d($xcore-icons-layer-width / -7, $xcore-icons-layer-spacing * -1, 0);
+                    opacity: 0;
+                }
+
+                &::after {
+                    transform: translate3d(0, $y-offset * -2, 0) rotate(-90deg);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+@import '~@angular/material/theming';
+@import './themes/theme-colors';
+@import './themes/navbar-theme';
+@import './components/typography.scss';
+@import './animations/xcore-icons.scss';
+
+// Include common styles for Angular Material. 
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Global scope typography (For both light and dark themes)
+@include angular-material-typography($custom-typography);
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Theme colors
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+$xcore-theme-primary: mat-palette($xcore-primary);
+$xcore-theme-accent: mat-palette($xcore-accent);
+$xcore-theme-warn: mat-palette($xcore-red);
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Light theme
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+$xcore-theme: mat-light-theme(
+  $xcore-theme-primary, 
+  $xcore-theme-accent, 
+  $xcore-theme-warn
+); 
+
+.light-theme {
+  @include angular-material-theme($xcore-theme);
+}
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Dark theme
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+$xcore-dark-theme: mat-dark-theme(
+  $xcore-theme-primary, 
+  $xcore-theme-accent, 
+  $xcore-theme-warn
+); 
+
+.dark-theme {
+  @include angular-material-theme($xcore-dark-theme);
+
+}
+
+@mixin angular-material-theme($xcore-theme) {
+  @include mat-core-theme($xcore-theme);
+  @include mat-button-theme($xcore-theme);
+  @include mat-card-theme($xcore-theme);
+  @include mat-checkbox-theme($xcore-theme);
+  @include mat-icon-theme($xcore-theme);
+  @include mat-input-theme($xcore-theme);
+  @include mat-list-theme($xcore-theme);
+  @include mat-menu-theme($xcore-theme);
+  @include mat-radio-theme($xcore-theme);
+  @include mat-select-theme($xcore-theme);
+  @include mat-sidenav-theme($xcore-theme);
+  @include mat-slide-toggle-theme($xcore-theme);
+  @include mat-slider-theme($xcore-theme);
+  @include mat-tabs-theme($xcore-theme);
+  @include mat-toolbar-theme($xcore-theme);
+}
+
+@include angular-material-theme($xcore-theme); // Main theme definition
+
+

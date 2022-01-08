@@ -1,0 +1,52 @@
+<div [ngClass]="{'dark-theme': isDarkTheme | async}">
+  <mat-toolbar color="primary" >
+    <mat-toolbar-row>
+      <img src="../assets/img/logo.png" height="60" alt="logo">
+      <h1 class="display-1" style="margin-left: 20px; margin-right: 20px;color: #f5f5f5">X-Core Web</h1>
+      <ul class="navbar-nav ml-auto">
+        <li class="sidenav-toggle">
+          <div class="xcore-icons xcore-icons--vortex" [ngClass]="{'is-active' : opened}" (click)="clicked()">
+            <div class="xcore-icons-box">
+              <div class="xcore-icons-inner"></div>
+            </div>
+          </div>
+        </li>
+      </ul>
+        
+      <span class="menu-spacer"></span>
+       
+      <!-- Drop down menu -->
+      <div class="navbar-nav ml-auto">
+        <div class="container">
+          <span style="font-size: 32px; padding-left: 10px;">
+            <i class="fas fa-sun"></i>
+          </span>
+          </div>
+          <label class="switch">
+            <mat-slide-toggle (change)="toggleDarkTheme($event.checked)"></mat-slide-toggle>
+            <span class="slider round"></span>
+          </label>
+          <div class="container">
+            <span style="font-size: 32px; padding-right: 10px;">
+              <i class="fas fa-moon"></i>
+            </span>
+          </div>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <!-- Main Content -->
+  <section class="app-body">
+    <mat-sidenav-container class="app-sidenav-container">
+      <mat-sidenav #sidebar class="app-sidenav mat-elevation-z10" mode="side" [opened]="opened">
+        <app-sidenav></app-sidenav>
+      </mat-sidenav>
+
+      <mat-sidenav-content class="main-panel">
+          <router-outlet></router-outlet>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+
+    <app-footer></app-footer>
+  </section>
+</div>

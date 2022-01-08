@@ -1,0 +1,10 @@
+@mixin navbar-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent); 
+  
+  .mat-toolbar {
+    background: linear-gradient(to bottom, mat-color($primary), mat-color($accent)) !important;
+  } 
+}
+
+

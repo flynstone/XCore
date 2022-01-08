@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+@import './assets/scss/themes.scss';
+@import './assets/scss/components/spinner.scss';
+@import './assets/scss/gradients.scss';
+
+html, body { height: 100%; }
+body {
+  margin: 0;
+  padding: 0; 
+  font-family: $main-font-family;
+}

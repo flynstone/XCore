@@ -1,0 +1,228 @@
+// Button Colors
+$purple: #9b3cb7;
+$blue: #155799;
+$green: #0f9b0f;
+$orange: #ff6a00;
+$red: #dc2424;
+$yellow: #fdbb2d;
+
+// Common Colors
+$off-wht: rgba(white, .4);
+
+
+// Mixins
+@mixin btn-theme($btn-color) {
+    background-color: $btn-color;
+    border-color: darken($btn-color, 20%);
+    &:hover {
+        background-color: darken($btn-color, 2%);
+        box-shadow: 0 .125em $off-wht, inset 0 .063em $off-wht, inset 0 -.188em lighten($btn-color, 2%);
+    }
+    &:active {
+        box-shadow: 0 .063em $off-wht, inset 0 0 1.094em darken($btn-color, 40%), inset 0 .063em darken($btn-color, 20%), inset 0 -.188em darken($btn-color, 20%);
+    }
+}
+
+@mixin trans($val...) {
+    -webkit-transition: $val;
+    -moz-transition: $val;
+    -o-transition: $val;
+    transition: $val;
+}
+
+.btn-style-sm {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: .528em 1.41em;
+    border: .094em;
+    border-radius: .625em;
+    box-shadow: 0 .375em .313em -.313em rgba(black, .8), inset 0 .063em $off-wht, inset 0 -.188em rgba(black, .15);
+    color: #fff;
+    font: .875rem;
+    text-shadow: 0 0.063em rgba(black, .8);
+    @include trans(0.2s ease-in-out);
+    cursor: pointer;
+}
+
+.btn-style-md {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: .704em 1.875em;
+    border: .094em;
+    border-radius: .625em;
+    box-shadow: 0 .375em .313em -.313em rgba(black, .8), inset 0 .063em $off-wht, inset 0 -.188em rgba(black, .15);
+    color: #fff;
+    text-shadow: 0 0.063em rgba(black, .8);
+    @include trans(0.2s ease-in-out);
+    cursor: pointer;
+}
+
+.btn-style-lg {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.880em 2.344em;
+    border: .094em;
+    border-radius: .625em;
+    box-shadow: 0 .375em .313em -.313em rgba(black, .8), inset 0 .063em $off-wht, inset 0 -.188em rgba(black, .15);
+    color: #fff;
+    font: 1.25rem;
+    text-shadow: 0 0.063em rgba(black, .8);
+    @include trans(0.2s ease-in-out);
+    cursor: pointer;
+}
+
+
+.btn-style1-sm {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: .528em 1.41em;
+    border: outset;
+    border-color: unset;
+    border-radius: .625em;
+    box-shadow: 0 .375em .313em -.313em rgba(black, .8), inset 0 .063em $off-wht, inset 0 -.188em rgba(black, .15);
+    color: #fff;
+    font: .875rem;
+    text-shadow: 0 0.063em rgba(black, .8);
+    @include trans(0.2s ease-in-out);
+    cursor: pointer;
+}
+
+.btn-style1-md {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: .704em 1.875em;
+    border: outset;
+    border-color: unset;
+    border-radius: .625em;
+    box-shadow: 0 .375em .313em -.313em rgba(black, .8), inset 0 .063em $off-wht, inset 0 -.188em rgba(black, .15);
+    color: #fff;
+    text-shadow: 0 0.063em rgba(black, .8);
+    @include trans(0.2s ease-in-out);
+    cursor: pointer;
+}
+
+.btn-style1-lg {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.880em 2.344em;
+    border: outset;
+    border-color: unset;
+    border-radius: .625em;
+    box-shadow: 0 .375em .313em -.313em rgba(black, .8), inset 0 .063em $off-wht, inset 0 -.188em rgba(black, .15);
+    color: #fff;
+    font: 1.25rem;
+    text-shadow: 0 0.063em rgba(black, .8);
+    @include trans(0.2s ease-in-out);
+    cursor: pointer;
+}
+
+.btn-style2-sm {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: .528em 1.41em;
+    border: .094em;
+    border-radius: .05em;
+    box-shadow: 0 .375em .313em -.313em rgba(black, .8), inset 0 .063em $off-wht, inset 0 -.188em rgba(black, .15);
+    color: #fff;
+    font: .875rem;
+    text-shadow: 0 0.063em rgba(black, .8);
+    @include trans(0.2s ease-in-out);
+    cursor: pointer;
+}
+
+.btn-style2-md {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: .704em 1.875em;
+    border: .094em;
+    border-radius: .05em;
+    box-shadow: 0 .375em .313em -.313em rgba(black, .8), inset 0 .063em $off-wht, inset 0 -.188em rgba(black, .15);
+    color: #fff;
+    text-shadow: 0 0.063em rgba(black, .8);
+    @include trans(0.2s ease-in-out);
+    cursor: pointer;
+}
+
+.btn-style2-lg {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.880em 2.344em;
+    border: .094em;
+    border-radius: .05em;
+    box-shadow: 0 .375em .313em -.313em rgba(black, .8), inset 0 .063em $off-wht, inset 0 -.188em rgba(black, .15);
+    color: #fff;
+    font: 1.25rem;
+    text-shadow: 0 0.063em rgba(black, .8);
+    @include trans(0.2s ease-in-out);
+    cursor: pointer;
+}
+
+
+.btn-style-rnd-sm {
+    width: 45px;
+    height: 45px;
+    margin: 0.5rem;
+    line-height: 45px;
+    font-size: 0.9rem;
+    text-align: center;
+    border-radius: 50%;
+    border: .094em;
+}
+
+.btn-style-rnd-md {
+    width: 55px;
+    height: 55px;
+    margin: 0.5rem;
+    line-height: 55px;
+    font-size: 1.1rem;
+    text-align: center;
+    border-radius: 50%;
+    border: .094em;
+}
+
+.btn-style-rnd-lg {
+    width: 70px;
+    height: 70px;
+    margin: 0.5rem;
+    line-height: 70px;
+    font-size: 1.3rem;
+    text-align: center;
+    border-radius: 50%;
+    border: .094em;
+}
+
+
+// Themes
+.purple {
+    @include btn-theme($purple);
+}
+
+.blue {
+    @include btn-theme($blue);
+}
+
+.green {
+    @include btn-theme($green);
+}
+
+.orange {
+    @include btn-theme($orange);
+}
+
+.red {
+    @include btn-theme($red);
+}
+
+.yellow {
+    @include btn-theme($yellow);
+}
+
+// Button sizes
+@mixin button-size($padding-y, $padding-x, $font-size, $line-height, $border-radius) {
+  padding: $padding-y $padding-x;
+  @include font-size($font-size);
+  line-height: $line-height;
+  // Manually declare to provide an override to the browser default
+  @include border-radius($border-radius, 0);
+}
+  

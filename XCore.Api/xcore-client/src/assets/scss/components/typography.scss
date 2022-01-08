@@ -1,0 +1,22 @@
+// Adobe Fonts
+$main-font-family: ff-ernestine-pro;
+$header-font-family: pauline;
+$sidenav-font-family: alexa-std;
+
+// Material typography configuration reference:
+// https://material.angular.io/guide/typography
+$custom-typography: mat-typography-config(
+  $font-family:   $main-font-family,
+  $display-4:     mat-typography-level(112px, 112px, 300, $letter-spacing: -0.05em),
+  $display-3:     mat-typography-level(56px, 56px, 400, $letter-spacing: -0.02em),
+  $display-2:     mat-typography-level(45px, 48px, 400, $letter-spacing: -0.005em),
+  $display-1:     mat-typography-level(32px, 48px, 700),
+  $headline:      mat-typography-level(24px, 32px, 400),
+  $title:         mat-typography-level(24px, 36px, 400),
+  $subheading-2:  mat-typography-level(16px, 28px, 400),
+  $subheading-1:  mat-typography-level(15px, 24px, 400),
+  $body-2:        mat-typography-level(28px, 36px, 400),
+  $body-1:        mat-typography-level(16px, 24px, 500),
+  $caption:       mat-typography-level(12px, 20px, 400),
+  $button:        mat-typography-level(14px, 14px, 700)
+);

@@ -1,0 +1,31 @@
+footer {
+  background-color: #1c2331;
+  background-image: url('../../../../assets/img/stardust.png');
+  border-top: 1px solid #bbb;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 1rem;
+  color: #1fcec5
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: center;
+}

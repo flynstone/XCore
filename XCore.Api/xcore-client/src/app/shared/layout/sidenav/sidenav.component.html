@@ -1,0 +1,101 @@
+<div class="sidenav">
+  <mat-accordion multi>
+      
+      <mat-expansion-panel>
+          <mat-expansion-panel-header>
+              <mat-panel-title>Home</mat-panel-title>              
+          </mat-expansion-panel-header>
+
+          <mat-selection-list [multiple]="false" dense>
+              <mat-list-option routerLink="../../home" routerLinkActive="active">Home</mat-list-option>
+          </mat-selection-list>      
+      </mat-expansion-panel>
+      
+      <mat-expansion-panel>
+          <mat-expansion-panel-header>
+              <mat-panel-title>COMP214</mat-panel-title>              
+              <mat-panel-description>Interactive Technologies</mat-panel-description>
+          </mat-expansion-panel-header>
+
+          <mat-divider></mat-divider>
+          <br>
+          <mat-panel-title>
+              <strong>Topic 4.2</strong>
+          </mat-panel-title>
+
+          <mat-selection-list [multiple]="false" dense>          
+              <mat-list-option routerLink="../../design-principles" routerLinkActive="active">Design Principles In HCI</mat-list-option>
+              <mat-list-option routerLink="../../specialized-input-devices" routerLinkActive="active">Specialized Input Devices and Their Applications</mat-list-option>
+              <mat-list-option routerLink="../../specialized-output-devices" routerLinkActive="active">Specialized Output Devices and Their Applications</mat-list-option>           
+              <mat-list-option routerLink="../../emerging-interface-concept" routerLinkActive="active">Emerging Interface Concepts and Technologies</mat-list-option>       
+          </mat-selection-list>
+
+          <br>
+          <mat-divider></mat-divider>
+          <br>
+
+          <mat-panel-title>
+              <strong>
+                  Topic 4.3
+              </strong>
+          </mat-panel-title>
+
+          <mat-selection-list [multiple]="false" dense>          
+              <mat-list-option routerLink="../../image-gallery" routerLinkActive="active">Image Gallery</mat-list-option>
+          </mat-selection-list>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel (opened)="panelOpenState = true"
+                           (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+              <mat-panel-title>COMP200</mat-panel-title>
+              <mat-panel-description>Project 3: Data Modeling</mat-panel-description>
+          </mat-expansion-panel-header>   
+          
+          <mat-divider></mat-divider>
+          <br>
+          <mat-panel-title>
+              <strong>
+                  Database
+              </strong>
+          </mat-panel-title>
+
+          <mat-selection-list [multiple]="false" dense>
+              <mat-list-option routerLink="../../rental-project/introduction" routerLinkActive="active">Introduction</mat-list-option>
+              <mat-list-option routerLink="../../rental-project/database-structure" routerLinkActive="active">Database Structure</mat-list-option>
+              <mat-list-option routerLink="../../rental-project/entity-framework" routerLinkActive="active">Entity Framework</mat-list-option>
+          </mat-selection-list>
+
+          <br>
+          <mat-divider></mat-divider>
+          <br>
+
+          <mat-panel-title>
+              <strong>
+                  Working Database
+              </strong>
+          </mat-panel-title>
+
+          <mat-selection-list [multiple]="false" dense>
+              <mat-list-option routerLink="../../rental-project" routerLinkActive="active">Customers</mat-list-option>
+              <mat-list-option routerLink="../../rental-project/categories" routerLinkActive="active">Categories</mat-list-option>
+              <mat-list-option routerLink="../../rental-project/medias" routerLinkActive="active">Medias</mat-list-option>
+              <mat-list-option routerLink="../../rental-project/rentals" routerLinkActive="active">Rentals</mat-list-option>
+          </mat-selection-list>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel (opened)="panelOpenState = true"
+                           (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+              Code Snippets
+          </mat-expansion-panel-header>
+
+          <mat-selection-list [multiple]="false" dense>          
+              <mat-list-option routerLink="../../front-end" routerLinkActive="active">Front End</mat-list-option>
+              <mat-list-option routerLink="../../back-end" routerLinkActive="active">Back End</mat-list-option>
+          </mat-selection-list>
+      </mat-expansion-panel>
+
+  </mat-accordion>
+</div>
+

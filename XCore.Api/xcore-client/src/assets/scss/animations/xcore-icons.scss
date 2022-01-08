@@ -1,0 +1,55 @@
+// --------------------------------------------------
+// Settings
+// --------------------------------------------------
+
+$xcore-icons-padding-x: 15px !default;
+$xcore-icons-padding-y: 15px !default;
+$xcore-icons-layer-width: 40px !default;
+$xcore-icons-layer-height: 4px !default;
+$xcore-icons-layer-spacing: 6px !default;
+$xcore-icons-layer-color: #fff !default;
+$xcore-icons-layer-border-radius: 4px !default;
+$xcore-icons-hover-opacity: 0.7 !default;
+$xcore-icons-active-layer-color: $xcore-icons-layer-color !default;
+$xcore-icons-active-hover-opacity: $xcore-icons-hover-opacity !default;
+
+// To use CSS filters as the hover effect instead of opacity set the $xcore-icons-hover-use-filter as true
+// and change the value of $xcore-icons-hover-filter accordingly
+$xcore-icons-hover-use-filter: false !default;
+$xcore-icons-hover-filter: opacity(50%) !default;
+$xcore-icons-active-hover-filter: $xcore-icons-hover-filter !default;
+
+
+
+// --------------------------------------------------
+// Types
+// --------------------------------------------------
+
+$xcore-icons-types: (
+    collapse,
+    elastic,
+    emphatic,
+    slider,
+    spin,
+    spring,
+    squeeze,
+    vortex,
+) !default;
+
+
+// --------------------------------------------------
+// Imports
+// --------------------------------------------------
+
+// Base
+@import './base';
+
+// Types
+@import './types/collapse';
+@import './types/elastic';
+@import './types/emphatic';
+@import './types/slider';
+@import './types/spin';
+@import './types/spring';
+@import './types/squeeze';
+@import './types/vortex';
