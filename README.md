@@ -32,7 +32,7 @@ Project still under development, MVC Project
 
 - Project being re-built with Angular
 - Link below to the front-end repository
-- [a link] (https://github.com/flynstone/XCore/tree/main/XCore.Api/xcore-client)
+- https://github.com/flynstone/XCore/tree/main/XCore.Api/xcore-client
 
 
 ### Controllers (C)
