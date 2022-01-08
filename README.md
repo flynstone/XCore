@@ -27,6 +27,7 @@ Project still under development, MVC Project
 
 !["screenshot description"](./assets/migration.png);
 
+!["screenshot description"](./XCore.Api/xcore-client/src/assets/img/authentication-cookie.png);
 
 ### Views (V)
 
