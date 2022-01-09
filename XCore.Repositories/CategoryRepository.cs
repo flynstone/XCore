@@ -1,8 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Linq.Expressions;
 using System.Threading.Tasks;
 using XCore.Entities;
 using XCore.Entities.Models.Rentals;
@@ -18,15 +16,20 @@ namespace XCore.Repositories
 
         public async Task<IEnumerable<Category>> GetCategoriesAsync(bool trackChanges)
         {
-            return (IEnumerable<Category>)await this.FindAll(trackChanges).OrderBy<Category, string>((Expression<Func<Category, string>>)(c => c.Description)).ToListAsync<Category>();
+            return await FindAll(trackChanges).OrderBy(c => c.Description).ToListAsync();
         }
 
-        public async Task<Category> GetCategoryAsync(int categoryId, bool trackChanges) => await this.FindByCondition((Expression<Func<Category, bool>>)(c => c.CategoryId.Equals(categoryId)), (trackChanges ? 1 : 0) != 0).SingleOrDefaultAsync<Category>();
+        public async Task<Category> GetCategoryAsync(int categoryId, bool trackChanges) => 
+            await FindByCondition(c => c.CategoryId.Equals(categoryId), (trackChanges ? 1 : 0) != 0)
+            .SingleOrDefaultAsync();
 
-        public void CreateCategory(Category category) => this.Create(category);
+        public void CreateCategory(Category category) => 
+            Create(category);
 
-        public void UpdateCategory(Category category) => this.Update(category);
+        public void UpdateCategory(Category category) => 
+            Update(category);
 
-        public void DeleteCategory(Category category) => this.Delete(category);
+        public void DeleteCategory(Category category) => 
+            Delete(category);
     }
 }

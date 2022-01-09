@@ -4,6 +4,7 @@ namespace XCore.Entities.DataTransferObjects.Customers
 {
     public class CustomerForUpdateDto
     {
+        public int CustomerId { get; set; }
         [Required(ErrorMessage = "Last name is required.")]
         public string LastName { get; set; }
 

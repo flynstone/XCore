@@ -5,6 +5,7 @@ namespace XCore.Entities.DataTransferObjects.Rentals
 {
     public class RentalForUpdateDto
     {
+        public int RentalId { get; set; }
         [Column(TypeName = "Date")]
         public DateTime DateOfRental { get; set; }
 
