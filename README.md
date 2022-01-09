@@ -42,7 +42,7 @@ Project still under development, MVC Project
 
 ### Controllers (C)
 
-- Working with data transfer objects, and nlog
+- Working with data transfer objects, automapper and nlog
 
 !["screenshot description"](./assets/controller.png)
 
