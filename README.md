@@ -37,7 +37,7 @@ Project still under development, MVC Project
 
 ### Controllers (C)
 
-- Working with data transfer objects, and nlog to keep records of errors
+- Working with data transfer objects, and nlog
 
 !["screenshot description"](./assets/controller.png)
 
@@ -46,8 +46,10 @@ Project still under development, MVC Project
 
 ### Swagger
 
-- More details comming..
-
 !["screenshot description"](./assets/swagger.png)
 
+## Progress
+- Testing backend routing before connecting the front-end. I realized I forgot to seed the database when restoring it. (Due to physical host hardware failure)
+
+!["screenshot description"](./XCore.Api/xcore-client/src/assets/img/authentication-cookie.png)
 
