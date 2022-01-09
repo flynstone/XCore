@@ -42,7 +42,7 @@ Project still under development, MVC Project
 
 ### Controllers (C)
 
-- Working with data transfer objects, and nlog
+- Working with data transfer objects, automapper and nlog
 
 !["screenshot description"](./assets/controller.png)
 
@@ -59,6 +59,12 @@ Project still under development, MVC Project
 - Testing backend routing before connecting the front-end. I realized I forgot to seed the database when restoring it. (Due to physical host hardware failure)
 
 !["screenshot description"](./XCore.Api/xcore-client/src/assets/img/testing-backend-routing.png)
+
+- Seeding Rental Project
+
+!["screenshot description"](./XCore.Api/xcore-client/src/assets/img/rental-seeds.png)
+
+
 
 
 
