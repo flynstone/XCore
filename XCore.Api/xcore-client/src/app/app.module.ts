@@ -14,7 +14,7 @@ import { RouterModule } from '@angular/router';
     AppComponent
   ],
   imports: [
-    BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
+    BrowserModule.withServerTransition({ appId: 'ng-cli-unisversal' }),
     AppRoutingModule,
     BrowserAnimationsModule,
     SharedModule,
