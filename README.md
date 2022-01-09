@@ -15,6 +15,11 @@ Project still under development, MVC Project
 - Will need to configure SPA for Front-End
 ```
 
+### Backend Servers
+- Screen shot of the 3 backend servers running
+
+!["screenshot description"](./XCore.Api/xcore-client/src/assets/img/backend-servers.png)
+
 ### Models (M)
 
 - Built with entity framework code first
@@ -42,6 +47,7 @@ Project still under development, MVC Project
 !["screenshot description"](./assets/controller.png)
 
 ### External login provider (Google)
+
 !["screenshot description"](./XCore.Api/xcore-client/src/assets/img/authentication-cookie.png)
 
 ### Swagger
@@ -49,7 +55,10 @@ Project still under development, MVC Project
 !["screenshot description"](./assets/swagger.png)
 
 ## Progress
+
 - Testing backend routing before connecting the front-end. I realized I forgot to seed the database when restoring it. (Due to physical host hardware failure)
 
-!["screenshot description"](./XCore.Api/xcore-client/src/assets/img/authentication-cookie.png)
+!["screenshot description"](./XCore.Api/xcore-client/src/assets/img/testing-backend-routing.png)
+
+
 
