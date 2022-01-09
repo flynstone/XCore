@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using XCore.Entities;
+using XCore.Api.Extensions;
 using XCore.Entities.DataTransferObjects.Categories;
+using XCore.Entities.DataTransferObjects.Rentals;
 using XCore.Entities.Models.Rentals;
 using XCore.LoggerService;
 using XCore.Repositories.Interfaces;
@@ -16,87 +16,100 @@ namespace XCore.Api.Controllers
     public class CategoriesController : ControllerBase
     {
         private readonly IUnitOfWork _unitOfWork;
-        private readonly XCoreDbContext _context;
-        private readonly ILoggerManager _loggerManager;
+        private readonly ILoggerManager _logger;
         private readonly IMapper _mapper;
 
-        public CategoriesController(
-          IUnitOfWork unitOfWork,
-          XCoreDbContext context,
-          ILoggerManager loggerManager,
-          IMapper mapper)
+        public CategoriesController(IUnitOfWork unitOfWork, ILoggerManager logger, IMapper mapper)
         {
-            this._unitOfWork = unitOfWork;
-            this._context = context;
-            this._loggerManager = loggerManager;
-            this._mapper = mapper;
+            _unitOfWork = unitOfWork;
+            _logger = logger;
+            _mapper = mapper;
         }
 
+        // GET: api/categories
         [HttpGet]
         public async Task<IActionResult> GetCategories()
         {
-            CategoriesController categoriesController = this;
-            IEnumerable<Category> categoriesAsync = await categoriesController._unitOfWork.Category.GetCategoriesAsync(false);
-            IEnumerable<CategoryDto> categoryDtos = categoriesController._mapper.Map<IEnumerable<CategoryDto>>((object)categoriesAsync);
-            return (IActionResult)categoriesController.Ok((object)categoryDtos);
+            var categories = await _unitOfWork.Category.GetCategoriesAsync(trackChanges: false);
+
+            var categoriesDto = _mapper.Map<IEnumerable<RentalDto>>(categories);
+
+            return Ok(categoriesDto);
         }
 
+        // GET: api/categories/5
         [HttpGet("{categoryId}")]
         public async Task<IActionResult> GetCategory(int categoryId)
         {
-            CategoriesController categoriesController = this;
-            Category categoryAsync = await categoriesController._unitOfWork.Category.GetCategoryAsync(categoryId, false);
-            if (categoryAsync == null)
+            var category = await _unitOfWork.Category.GetCategoryAsync(categoryId, trackChanges: false);
+
+            // Make sure category exists, handle error if not found
+            if (category == null)
             {
-                categoriesController._loggerManager.LogInfo(string.Format("Category with id: {0} doesn't exist in the database.", (object)categoryId));
-                return (IActionResult)categoriesController.NotFound();
+                _logger.LogInfo($"Category with id: {categoryId} doesn't exist in the database.");
+                return NotFound();
             }
-            CategoryDto categoryDto = categoriesController._mapper.Map<CategoryDto>((object)categoryAsync);
-            return (IActionResult)categoriesController.Ok((object)categoryDto);
-        }
-
-        [HttpPost]
-        public async Task<ActionResult<CategoryForCreationDto>> CreateCategory(
-          [FromBody] CategoryForCreationDto category)
-        {
-            CategoriesController categoriesController = this;
-            Category categoryEntity = categoriesController._mapper.Map<Category>((object)category);
-            categoriesController._unitOfWork.Category.CreateCategory(categoryEntity);
-            await categoriesController._unitOfWork.SaveAsync();
-            ActionResult<CategoryForCreationDto> actionResult = (ActionResult<CategoryForCreationDto>)(ActionResult)categoriesController.CreatedAtAction(nameof(CreateCategory), (object)new
+            else
             {
-                categoryId = categoryEntity.CategoryId
-            }, (object)categoryEntity);
-            categoryEntity = (Category)null;
-            return actionResult;
+                var categoryDto = _mapper.Map<CategoryDto>(category);
+                return Ok(categoryDto);
+            }
         }
 
-        [HttpPut("{categoryId:int}")]
-        public async Task<ActionResult> UpdateCategory(
-          int categoryId,
-          [FromBody] CategoryForUpdateDto category)
+        // POST: api/categories
+        [HttpPost]
+        [ServiceFilter(typeof(ValidationFilterAttribute))]
+        public async Task<ActionResult<CategoryForCreationDto>> CreateCategory([FromBody] CategoryForCreationDto category)
         {
-            CategoriesController categoriesController = this;
-            Category entity = categoriesController._mapper.Map<Category>((object)category);
-            entity.CategoryId = categoryId;
-            categoriesController._context.Entry<Category>(entity).State = EntityState.Modified;
-            await categoriesController._unitOfWork.SaveAsync();
-            return (ActionResult)categoriesController.NoContent();
+            var categoryEntity = _mapper.Map<Category>(category);
+
+            _unitOfWork.Category.CreateCategory(categoryEntity);
+            await _unitOfWork.SaveAsync();
+
+            var categoryToReturn = _mapper.Map<RentalDto>(categoryEntity);
+
+            return CreatedAtRoute("CategoryId", new { categoryId = categoryToReturn.CategoryId }, categoryToReturn);
         }
 
+        // PUT: api/categories/5
+        [HttpPut("{categoryId:int}")]
+        [ServiceFilter(typeof(ValidationFilterAttribute))]
+        public async Task<ActionResult> UpdateCategory(int categoryId, [FromBody] CategoryForUpdateDto category)
+        {
+            if (categoryId != category.CategoryId)
+            {
+                _logger.LogInfo($"Category with id: {categoryId} doesn't exist in the database.");
+                return NotFound();
+            }
+            else
+            {
+                var categoryEntity = HttpContext.Items["category"] as Category;
+
+                _mapper.Map(category, categoryEntity);
+                await _unitOfWork.SaveAsync();
+
+                return NoContent();
+            }
+        }
+
+        // DELETE: api/categories/5
         [HttpDelete("{categoryId}")]
         public async Task<IActionResult> DeleteCategory(int categoryId)
         {
-            CategoriesController categoriesController = this;
-            Category categoryAsync = await categoriesController._unitOfWork.Category.GetCategoryAsync(categoryId, false);
-            if (categoryAsync == null)
+            if (!ModelState.IsValid)
             {
-                categoriesController._loggerManager.LogError(string.Format("Category with id: {0} doesn't exist in the database", (object)categoryId));
-                return (IActionResult)categoriesController.NotFound();
+                _logger.LogInfo($"Category with id: {categoryId} doesn't exist in the database.");
+                return NotFound();
             }
-            categoriesController._unitOfWork.Category.DeleteCategory(categoryAsync);
-            await categoriesController._unitOfWork.SaveAsync();
-            return (IActionResult)categoriesController.NoContent();
+            else
+            {
+                var category = HttpContext.Items["category"] as Category;
+
+                _unitOfWork.Category.DeleteCategory(category);
+                await _unitOfWork.SaveAsync();
+
+                return NoContent();
+            }
         }
     }
 }

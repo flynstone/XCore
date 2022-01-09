@@ -49,6 +49,7 @@ namespace XCore.Api.Extensions
             services.AddScoped<IEmployeeRepository, EmployeeRepository>();
             services.AddScoped<IJobTitleRepository, JobTitleRepository>();
             services.AddScoped<IRuleTypeRepository, RuleTypeRepository>();
+            services.AddScoped<ValidationFilterAttribute>();
         }
 
         // Configure Swagger
