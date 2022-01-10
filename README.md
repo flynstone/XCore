@@ -25,7 +25,6 @@ Project still under development, MVC Project
 - Built with entity framework code first
 - Add migrations to MSSQL (Express)
 
-
 !["screenshot description"](./assets/model.png)
 
 !["screenshot description"](./assets/dataset.png)
@@ -64,6 +63,9 @@ Project still under development, MVC Project
 
 !["screenshot description"](./XCore.Api/xcore-client/src/assets/img/rental-seeds.png)
 
+- Fetching seeds with swagger
+
+!["screenshot description"](./assets/swagger-get.png)
 
 
 
