@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Routes
 
-Current development (rental project) that was used for class COMP266
+Current development (rental project) that was used for class COMP266 (First year class of bachelor's degree)
 
 !["screenshot description"](./src/assets/img/rental-project-routing.png)
 
