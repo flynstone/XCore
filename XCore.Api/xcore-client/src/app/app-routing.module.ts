@@ -11,10 +11,7 @@ const routes: Routes = [
   { path: 'privacy-policy', component: PrivacyPolicyComponent },
   { path: 'terms-and-conditions', component: TermsAndConditionsComponent },
   { path: 'cookies-policy', component: CookiesPolicyComponent },
-  {
-    path: '404',
-    component: NotFoundComponent,
-  },
+  { path: '404', component: NotFoundComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },  
   { path: '**', redirectTo: '/404', pathMatch: 'full' } // Redirect if path unknown
 ];
