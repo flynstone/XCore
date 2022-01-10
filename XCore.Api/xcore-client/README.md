@@ -6,12 +6,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Current development (rental project) that was used for class COMP266
 
-!["screenshot description"](src\assets\img\rental-project-routing.png)
+!["screenshot description"](./src/assets/img/rental-project-routing.png)
 
 ## Connecting to the backend
 
 
-!["screenshot description"](src\assets\img\backend-service.png)\
+!["screenshot description"](./src/assets/img/backend-service.png)
 
 
 ## Development server
