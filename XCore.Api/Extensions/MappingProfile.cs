@@ -26,7 +26,7 @@ namespace XCore.Api.Extensions
             this.CreateMap<Media, MediaDto>().ForMember(x => x.Category, options => options.MapFrom(e => e.ItemCategory.Description));
             this.CreateMap<MediaForCreationDto, Media>();
             this.CreateMap<MediaForUpdateDto, Media>();
-            this.CreateMap<Rental, RentalDto>().ForMember(x => x.Customer, options => options.MapFrom(e => e.Customer.FirstName + ' ' + e.Customer.LastName)).ForMember(x => x.Media, options => options.MapFrom(e => e.Media.ItemTitle)).ForMember(x => x.Category, options => options.MapFrom(e => e.Media.ItemCategory.Description));
+            this.CreateMap<Rental, RentalDto>().ForMember(x => x.Customer, options => options.MapFrom(e => e.Customer.FirstName + ' ' + e.Customer.LastName)).ForMember(x => x.Media, options => options.MapFrom(e => e.Media.ItemTitle));
             this.CreateMap<RentalForCreationDto, Rental>();
             this.CreateMap<RentalForUpdateDto, Rental>();
 

@@ -11,7 +11,6 @@ namespace XCore.Entities
         {
         }
 
-
         // Create Database Table (COMP200 Project)
         public DbSet<Category> Categories { get; set; }
         public DbSet<Customer> Customers { get; set; }
@@ -45,7 +44,11 @@ namespace XCore.Entities
                 .WithMany(eb => eb.EmployeeBackups)
                 .HasForeignKey(e => e.BackupId);
 
-            modelBuilder.ApplyConfiguration(new CrewConfiguration());
+            //modelBuilder.ApplyConfiguration(new CrewConfiguration());
+            //modelBuilder.ApplyConfiguration(new CategoryConfiguration());
+            //modelBuilder.ApplyConfiguration(new CustomerConfiguration());
+            //modelBuilder.ApplyConfiguration(new MediaConfiguration());
+            //modelBuilder.ApplyConfiguration(new RentalConfiguration());
         }
     }
 }

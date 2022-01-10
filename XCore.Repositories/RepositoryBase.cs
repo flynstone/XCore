@@ -18,9 +18,9 @@ namespace XCore.Repositories
             _entities = context.Set<T>();
         }
 
-        public IQueryable<T> GetAll() => (IQueryable<T>) _context.Set<T>();
+        public IQueryable<T> GetAll() => _context.Set<T>();
 
-        public IQueryable<T> FindAll(bool trackChanges) => trackChanges ? (IQueryable<T>)_context.Set<T>() : _context.Set<T>().AsNoTracking<T>();
+        public IQueryable<T> FindAll(bool trackChanges) => trackChanges ? _context.Set<T>() : _context.Set<T>().AsNoTracking<T>();
 
         public IQueryable<T> FindByCondition(
           Expression<Func<T, bool>> expression,

@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using XCore.Entities;
 
 namespace XCore.Api.Migrations
 {
     [DbContext(typeof(XCoreDbContext))]
-    partial class XCoreDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220109223008_SeedRentalProject")]
+    partial class SeedRentalProject
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

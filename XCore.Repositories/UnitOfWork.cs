@@ -21,9 +21,9 @@ namespace XCore.Repositories
         {
             get
             {
-                if (this._categoryRepository == null)
-                    this._categoryRepository = (ICategoryRepository)new CategoryRepository(_context);
-                return this._categoryRepository;
+                if (_categoryRepository == null)
+                    _categoryRepository = new CategoryRepository(_context);
+                return _categoryRepository;
             }
         }
 
@@ -31,9 +31,9 @@ namespace XCore.Repositories
         {
             get
             {
-                if (this._customerRepository == null)
-                    this._customerRepository = (ICustomerRepository)new CustomerRepository(_context);
-                return this._customerRepository;
+                if (_customerRepository == null)
+                    _customerRepository = new CustomerRepository(_context);
+                return _customerRepository;
             }
         }
 
@@ -41,9 +41,9 @@ namespace XCore.Repositories
         {
             get
             {
-                if (this._mediaRepository == null)
-                    this._mediaRepository = (IMediaRepository)new MediaRepository(_context);
-                return this._mediaRepository;
+                if (_mediaRepository == null)
+                    _mediaRepository = new MediaRepository(_context);
+                return _mediaRepository;
             }
         }
 
@@ -51,9 +51,9 @@ namespace XCore.Repositories
         {
             get
             {
-                if (this._rentalRepository == null)
-                    this._rentalRepository = (IRentalRepository)new RentalRepository(_context);
-                return this._rentalRepository;
+                if (_rentalRepository == null)
+                    _rentalRepository = new RentalRepository(_context);
+                return _rentalRepository;
             }
         }
 

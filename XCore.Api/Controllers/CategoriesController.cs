@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using XCore.Api.Extensions;
 using XCore.Entities.DataTransferObjects.Categories;
-using XCore.Entities.DataTransferObjects.Rentals;
 using XCore.Entities.Models.Rentals;
 using XCore.LoggerService;
 using XCore.Repositories.Interfaces;
@@ -32,7 +31,7 @@ namespace XCore.Api.Controllers
         {
             var categories = await _unitOfWork.Category.GetCategoriesAsync(trackChanges: false);
 
-            var categoriesDto = _mapper.Map<IEnumerable<RentalDto>>(categories);
+            var categoriesDto = _mapper.Map<IEnumerable<CategoryDto>>(categories);
 
             return Ok(categoriesDto);
         }
@@ -66,7 +65,7 @@ namespace XCore.Api.Controllers
             _unitOfWork.Category.CreateCategory(categoryEntity);
             await _unitOfWork.SaveAsync();
 
-            var categoryToReturn = _mapper.Map<RentalDto>(categoryEntity);
+            var categoryToReturn = _mapper.Map<CategoryDto>(categoryEntity);
 
             return CreatedAtRoute("CategoryId", new { categoryId = categoryToReturn.CategoryId }, categoryToReturn);
         }

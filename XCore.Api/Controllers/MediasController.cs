@@ -59,7 +59,7 @@ namespace XCore.Api.Controllers
         // POST: api/medias
         [HttpPost]
         [ServiceFilter(typeof(ValidationFilterAttribute))]
-        public async Task<ActionResult<MediaForCreationDto>> CreateMedia([FromBody] MediaForCreationDto media)
+        public async Task<IActionResult> CreateMedia([FromBody] MediaForCreationDto media)
         {
             var mediaEntity = _mapper.Map<Media>(media);
 
@@ -68,13 +68,13 @@ namespace XCore.Api.Controllers
 
             var mediaToReturn = _mapper.Map<MediaDto>(mediaEntity);
 
-            return CreatedAtRoute("RentalId", new { mediaId = mediaToReturn.MediaId }, mediaToReturn);
+            return CreatedAtRoute("MediaId", new { mediaId = mediaToReturn.MediaId }, mediaToReturn);
         }
 
         // PUT: api/medias
         [HttpPut("{mediaId:int}")]
         [ServiceFilter(typeof(ValidationFilterAttribute))]
-        public async Task<ActionResult> UpdateMedia(int mediaId, [FromBody] MediaForUpdateDto media)
+        public async Task<IActionResult> UpdateMedia(int mediaId, [FromBody] MediaForUpdateDto media)
         {
             if (mediaId != media.MediaId)
             {

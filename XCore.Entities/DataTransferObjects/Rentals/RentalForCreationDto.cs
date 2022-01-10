@@ -11,6 +11,7 @@ namespace XCore.Entities.DataTransferObjects.Rentals
     {
         [Column(TypeName = "Date")]
         public DateTime DateOfRental { get; set; }
+
         [Column(TypeName = "Date")]
         public DateTime DueDate { get; set; }
 

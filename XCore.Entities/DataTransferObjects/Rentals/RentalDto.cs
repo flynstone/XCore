@@ -23,9 +23,5 @@ namespace XCore.Entities.DataTransferObjects.Rentals
         // Media Foreign Key
         public int MediaId { get; set; }
         public string Media { get; set; }
-
-        // Category Foreign Key
-        public int CategoryId { get; set; }
-        public string Category { get; set; }
     }
 }

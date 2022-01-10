@@ -13,6 +13,6 @@ namespace XCore.Entities.Models.Rentals
 
         [ForeignKey("Category")] 
         public int CategoryId { get; set; } // Category's Foreign Key
-        public Category ItemCategory { get; set; } // Category's Navigation Property
+        public virtual Category ItemCategory { get; set; } // Category's Navigation Property
     }
 }
