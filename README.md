@@ -4,15 +4,15 @@ Project still under development, MVC Project
 
 ## Documentation
 
-- Backend built with C# (Asp.Net Core 5)
-- Implemented Identity Server 4
-- Database MSSQL Server Express
-- Swagger and NLog
-- Configured SMTP (Mailkit) for generating email for authentication process
+- Backend built with C# (Asp.Net Core 5) => https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-5.0
+- Implemented Identity Server 4          => https://identityserver4.readthedocs.io/en/latest/
+- Database MSSQL Server Express          => https://www.microsoft.com/en-ca/sql-server/sql-server-2019
+- Swagger                                => https://swagger.io/
+- NLog                                   => https://nlog-project.org/
+- SMTP (Mailkit)                         => https://github.com/jstedfast/MailKit
 
 ```diff
-- Front-End being rebuilt with Angular
-- Will need to configure SPA for Front-End
+- Front-End being rebuilt with Angular 12
 ```
 
 ### Backend Servers
@@ -67,6 +67,6 @@ Project still under development, MVC Project
 
 !["screenshot description"](./assets/swagger-get.png)
 
-
+- Currently working on front-end https://github.com/flynstone/XCore/tree/main/XCore.Api/xcore-client
 
 
