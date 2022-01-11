@@ -1,0 +1,51 @@
+table {
+  width: 100%;
+}
+
+.mat-column-dateOfRental {
+  width: 15% !important;
+}
+
+.mat-column-dueDate {
+  width: 15% !important;
+}
+
+.mat-column-customer {
+  width: 15% !important;
+}
+
+.mat-column-media {
+  width: 20% !important;
+}
+
+.mat-column-category {
+  width: 15% !important;
+}
+
+.mat-column-update {
+  width: 10% !important;
+  text-align: center !important;
+}
+
+.mat-column-delete {
+  width: 10% !important;
+  text-align: center !important;
+}
+
+th.mat-header-update {
+text-align: center !important;
+}
+
+th.mat-header-delete {
+text-align: center !important;
+}
+
+.rental-page {
+  margin-bottom: 15em;
+}
+
+.mat-paginator-sticky {
+  bottom: 0px;
+  position: sticky;
+  z-index: 10;
+}

@@ -1,12 +1,12 @@
 export class Category {
-    categoryId: number;
-    description: string;
+  categoryId: number;
+  description: string;
 }
 
 export interface CategoryForCreationDto {
-    description: string;
+  description: string;
 }
 
 export interface CategoryForUpdateDto {
-    description: string;
+  description: string;
 }

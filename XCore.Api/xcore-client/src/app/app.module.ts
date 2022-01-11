@@ -5,8 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
-import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-import { ErrorHandlerService } from './shared/_services/error-handler.service';
+import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
 @NgModule({
@@ -20,13 +19,6 @@ import { RouterModule } from '@angular/router';
     SharedModule,
     HttpClientModule,
     RouterModule,
-  ],
-  providers: [
-    {
-      provide: HTTP_INTERCEPTORS,
-      useClass: ErrorHandlerService,
-      multi: true
-    }
   ],
   bootstrap: [AppComponent]
 })

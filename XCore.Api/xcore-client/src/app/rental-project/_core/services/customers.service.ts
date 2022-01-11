@@ -10,35 +10,35 @@ import { Customer, CustomerForCreationDto, CustomerForUpdateDto } from "../model
 })
 export class CustomerService {
 
-    private apiUrl = environment.apiUrl + '/api/customers';
-    formData: Customer = new Customer();
-    list: Customer[];
-    
-    constructor(private http: HttpClient) { }
-    
-    getAll(): Observable<Customer[]> {
-        return this.http.get<Customer[]>(this.apiUrl);
-    }
+  private apiUrl = environment.apiUrl + '/api/customers';
+  formData: Customer = new Customer();
+  list: Customer[];
+  
+  constructor(private http: HttpClient) { }
+  
+  getAll(): Observable<Customer[]> {
+    return this.http.get<Customer[]>(this.apiUrl);
+  }
 
-    getById(customerId: number): Observable<Customer> {
-        return this.http.get<Customer>(`${this.apiUrl}/${customerId}`);
-    }
+  getById(customerId: number): Observable<Customer> {
+    return this.http.get<Customer>(`${this.apiUrl}/${customerId}`);
+  }
 
-    create(customer: CustomerForCreationDto) {
-        return this.http.post(this.apiUrl, customer);
-    }
+  create(customer: CustomerForCreationDto) {
+    return this.http.post(this.apiUrl, customer);
+  }
 
-    edit(customerId: number, customer: CustomerForUpdateDto) {
-        return this.http.put(`${this.apiUrl}/${customerId}`, customer);
-    }
+  edit(customerId: number, customer: CustomerForUpdateDto) {
+    return this.http.put(`${this.apiUrl}/${customerId}`, customer);
+  }
 
-    delete(customerId: number) {
-        return this.http.delete(`${this.apiUrl}/${customerId}`);
-    }
-
-    refreshList() {
-        this.http.get(this.apiUrl)
-            .toPromise()
-            .then(res => this.list = res as Customer[]);
-    }
+  delete(customerId: number) {
+    return this.http.delete(`${this.apiUrl}/${customerId}`);
+  }
+  
+  refreshList() {
+    this.http.get(this.apiUrl)
+      .toPromise()
+      .then(res => this.list = res as Customer[]);
+  }
 }

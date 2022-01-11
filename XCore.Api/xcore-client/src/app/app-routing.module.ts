@@ -6,8 +6,13 @@ import { NotFoundComponent } from './shared/components/not-found/not-found.compo
 import { PrivacyPolicyComponent } from './shared/components/privacy-policy/privacy-policy.component';
 import { TermsAndConditionsComponent } from './shared/components/terms-and-conditions/terms-and-conditions.component';
 
+// COMP200 -- Introduction To Computer Science
+const rentalProjectModule = () => import('./rental-project/rental-project.module').then(x => x.RentalProjectModule);
+
+
 const routes: Routes = [
   { path: "home", component: HomeComponent, pathMatch: "full" },
+  { path: "rental-project", loadChildren: rentalProjectModule },
   { path: 'privacy-policy', component: PrivacyPolicyComponent },
   { path: 'terms-and-conditions', component: TermsAndConditionsComponent },
   { path: 'cookies-policy', component: CookiesPolicyComponent },
