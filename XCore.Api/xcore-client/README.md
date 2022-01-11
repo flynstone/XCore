@@ -11,9 +11,9 @@ Current development (rental project) that was used for class COMP266 (First year
 ## Connecting to the backend
 
 
-!["screenshot description"](src\assets\img\front-end-model-service.png)
+!["screenshot description"](./src/assets/img/front-end-model-service.png)
 
-!["screenshot description"](src\assets\img\connecting-front-end.png)
+!["screenshot description"](./src/assets/img/connecting-front-end.png)
 
 
 ## Development server
