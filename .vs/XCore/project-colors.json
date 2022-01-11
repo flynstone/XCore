@@ -30,7 +30,12 @@
       "ProjectGuid": "921221b3-bb0b-4159-a218-1d781a5e244a",
       "DisplayName": "XCore.EmailService",
       "ColorIndex": 4
+    },
+    "8bc3f87c-b874-4de0-84bf-a458e020b89b": {
+      "ProjectGuid": "8bc3f87c-b874-4de0-84bf-a458e020b89b",
+      "DisplayName": "XCore.Repositories",
+      "ColorIndex": 5
     }
   },
-  "NextColorIndex": 5
+  "NextColorIndex": 6
 }
