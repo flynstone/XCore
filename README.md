@@ -18,18 +18,18 @@ Project still under development, MVC Project
 ### Backend Servers
 - Screen shot of the 3 backend servers running
 
-!["screenshot description"](./XCore.Api/xcore-client/src/assets/img/backend-servers.png)
+!["screenshot description"](/XCore.Api/xcore-client/src/assets/img/backend-servers.png)
 
 ### Models (M)
 
 - Built with entity framework code first
 - Add migrations to MSSQL (Express)
 
-!["screenshot description"](./assets/model.png)
+!["screenshot description"](/assets/model.png)
 
-!["screenshot description"](./assets/dataset.png)
+!["screenshot description"](/assets/dataset.png)
 
-!["screenshot description"](./assets/migration.png)
+!["screenshot description"](/assets/migration.png)
 
 
 ### Views (V)
