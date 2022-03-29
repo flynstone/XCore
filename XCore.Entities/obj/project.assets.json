@@ -796,28 +796,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\flyns\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\flyns\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\XCore\\XCore\\XCore.Entities\\XCore.Entities.csproj",
+      "projectUniqueName": "C:\\Users\\flyns\\source\\repos\\XCore\\XCore.Entities\\XCore.Entities.csproj",
       "projectName": "XCore.Entities",
-      "projectPath": "D:\\XCore\\XCore\\XCore.Entities\\XCore.Entities.csproj",
+      "projectPath": "C:\\Users\\flyns\\source\\repos\\XCore\\XCore.Entities\\XCore.Entities.csproj",
       "packagesPath": "C:\\Users\\flyns\\.nuget\\packages\\",
-      "outputPath": "D:\\XCore\\XCore\\XCore.Entities\\obj\\",
+      "outputPath": "C:\\Users\\flyns\\source\\repos\\XCore\\XCore.Entities\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
         "C:\\Users\\flyns\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -866,7 +858,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

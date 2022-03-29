@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VoFasT5WECgXVK5d44HTlCuGfR6PXkN2HqXU2yBXrLdIY9lr7IC72lF6Xdq5kBD/9WsvhgFByTQgZGGqTA0a9Q==",
+  "dgSpecHash": "sn88eI9Sp/7rS4z/T4IlnDs7pHqkwEeeuTVoqgnVdtCfbI2U7qkR2jT2xkcauMNUel0Djv0EESVdTBMSra6SRA==",
   "success": true,
-  "projectFilePath": "D:\\XCore\\XCore\\XCore.Client\\XCore.Client.csproj",
+  "projectFilePath": "C:\\Users\\flyns\\source\\repos\\XCore\\XCore.Client\\XCore.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\flyns\\.nuget\\packages\\identitymodel\\5.2.0\\identitymodel.5.2.0.nupkg.sha512",
     "C:\\Users\\flyns\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\5.0.13\\microsoft.aspnetcore.authentication.openidconnect.5.0.13.nupkg.sha512",

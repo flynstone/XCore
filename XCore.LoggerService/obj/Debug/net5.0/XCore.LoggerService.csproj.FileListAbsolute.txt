@@ -10,3 +10,15 @@ D:\XCore\XCore\XCore.LoggerService\obj\Debug\net5.0\XCore.LoggerService.csproj.C
 D:\XCore\XCore\XCore.LoggerService\obj\Debug\net5.0\XCore.LoggerService.dll
 D:\XCore\XCore\XCore.LoggerService\obj\Debug\net5.0\ref\XCore.LoggerService.dll
 D:\XCore\XCore\XCore.LoggerService\obj\Debug\net5.0\XCore.LoggerService.pdb
+C:\Users\flyns\source\repos\XCore\XCore.LoggerService\bin\Debug\net5.0\XCore.LoggerService.deps.json
+C:\Users\flyns\source\repos\XCore\XCore.LoggerService\bin\Debug\net5.0\XCore.LoggerService.dll
+C:\Users\flyns\source\repos\XCore\XCore.LoggerService\bin\Debug\net5.0\XCore.LoggerService.pdb
+C:\Users\flyns\source\repos\XCore\XCore.LoggerService\obj\Debug\net5.0\XCore.LoggerService.csproj.AssemblyReference.cache
+C:\Users\flyns\source\repos\XCore\XCore.LoggerService\obj\Debug\net5.0\XCore.LoggerService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\flyns\source\repos\XCore\XCore.LoggerService\obj\Debug\net5.0\XCore.LoggerService.AssemblyInfoInputs.cache
+C:\Users\flyns\source\repos\XCore\XCore.LoggerService\obj\Debug\net5.0\XCore.LoggerService.AssemblyInfo.cs
+C:\Users\flyns\source\repos\XCore\XCore.LoggerService\obj\Debug\net5.0\XCore.LoggerService.csproj.CoreCompileInputs.cache
+C:\Users\flyns\source\repos\XCore\XCore.LoggerService\obj\Debug\net5.0\XCore.LoggerService.dll
+C:\Users\flyns\source\repos\XCore\XCore.LoggerService\obj\Debug\net5.0\refint\XCore.LoggerService.dll
+C:\Users\flyns\source\repos\XCore\XCore.LoggerService\obj\Debug\net5.0\XCore.LoggerService.pdb
+C:\Users\flyns\source\repos\XCore\XCore.LoggerService\obj\Debug\net5.0\ref\XCore.LoggerService.dll

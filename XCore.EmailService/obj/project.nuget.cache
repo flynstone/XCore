@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8qGZ6mREOwvkBmuyFjx+NNzfsbVu3YT3VhUb55FOP5+vbRcfXtbFXA0omLGbDEUUJ42GOE9gtTTMfxbthZ/pkg==",
+  "dgSpecHash": "u+aPmATxU1wVELRZ/wERCgQ4JUvU1y0r6UehOXcw4BmCcEoIbj7SkhLyQ/6WfSDZhOLusbRCgZZBoL84aM1c+w==",
   "success": true,
-  "projectFilePath": "D:\\XCore\\XCore\\XCore.EmailService\\XCore.EmailService.csproj",
+  "projectFilePath": "C:\\Users\\flyns\\source\\repos\\XCore\\XCore.EmailService\\XCore.EmailService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\flyns\\.nuget\\packages\\mailkit\\2.6.0\\mailkit.2.6.0.nupkg.sha512",
     "C:\\Users\\flyns\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.13\\microsoft.aspnetcore.http.features.5.0.13.nupkg.sha512",

@@ -1,11 +1,12 @@
-﻿using Microsoft.EntityFrameworkCore;
-using XCore.Entities.Configurations;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
+using XCore.Entities.Models;
 using XCore.Entities.Models.Overtime;
 using XCore.Entities.Models.Rentals;
 
 namespace XCore.Entities
 {
-    public class XCoreDbContext : DbContext
+    public class XCoreDbContext : IdentityDbContext<User>
     {
         public XCoreDbContext(DbContextOptions options) : base(options)
         {

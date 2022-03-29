@@ -10,3 +10,15 @@ D:\XCore\XCore\XCore.Entities\obj\Debug\net5.0\XCore.Entities.csproj.CoreCompile
 D:\XCore\XCore\XCore.Entities\obj\Debug\net5.0\XCore.Entities.dll
 D:\XCore\XCore\XCore.Entities\obj\Debug\net5.0\ref\XCore.Entities.dll
 D:\XCore\XCore\XCore.Entities\obj\Debug\net5.0\XCore.Entities.pdb
+C:\Users\flyns\source\repos\XCore\XCore.Entities\bin\Debug\net5.0\XCore.Entities.deps.json
+C:\Users\flyns\source\repos\XCore\XCore.Entities\bin\Debug\net5.0\XCore.Entities.dll
+C:\Users\flyns\source\repos\XCore\XCore.Entities\bin\Debug\net5.0\XCore.Entities.pdb
+C:\Users\flyns\source\repos\XCore\XCore.Entities\obj\Debug\net5.0\XCore.Entities.csproj.AssemblyReference.cache
+C:\Users\flyns\source\repos\XCore\XCore.Entities\obj\Debug\net5.0\XCore.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\flyns\source\repos\XCore\XCore.Entities\obj\Debug\net5.0\XCore.Entities.AssemblyInfoInputs.cache
+C:\Users\flyns\source\repos\XCore\XCore.Entities\obj\Debug\net5.0\XCore.Entities.AssemblyInfo.cs
+C:\Users\flyns\source\repos\XCore\XCore.Entities\obj\Debug\net5.0\XCore.Entities.csproj.CoreCompileInputs.cache
+C:\Users\flyns\source\repos\XCore\XCore.Entities\obj\Debug\net5.0\XCore.Entities.dll
+C:\Users\flyns\source\repos\XCore\XCore.Entities\obj\Debug\net5.0\refint\XCore.Entities.dll
+C:\Users\flyns\source\repos\XCore\XCore.Entities\obj\Debug\net5.0\XCore.Entities.pdb
+C:\Users\flyns\source\repos\XCore\XCore.Entities\obj\Debug\net5.0\ref\XCore.Entities.dll

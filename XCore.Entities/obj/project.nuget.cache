@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8oLp8ONFs8BZktap8CLWkDwd0a6olwfzZqL/Pi81S+dxCKwAD6HNgzLPxdVbrTzQ/W5Mxaxxrb7RIplY9Y8umQ==",
+  "dgSpecHash": "mt8E2Jjj9TXkcVMIoLvd6NbPrSlcktj3OyQIkeJJR7g6wlz2WLyAl5IxAH4Ig/x07HwvOwp00X4dbTsR9bvjKA==",
   "success": true,
-  "projectFilePath": "D:\\XCore\\XCore\\XCore.Entities\\XCore.Entities.csproj",
+  "projectFilePath": "C:\\Users\\flyns\\source\\repos\\XCore\\XCore.Entities\\XCore.Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\flyns\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.13\\microsoft.aspnetcore.cryptography.internal.5.0.13.nupkg.sha512",
     "C:\\Users\\flyns\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.13\\microsoft.aspnetcore.cryptography.keyderivation.5.0.13.nupkg.sha512",

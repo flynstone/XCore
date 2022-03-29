@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Op1Npambzaq1VCUnuVJx1abyjIGtgdnB1u7g3cCURgLaNYKFnKiRsPeMO1lkC9PuVGTjHGclfk5RxuYRGfCxUA==",
+  "dgSpecHash": "7LupTwhqfUDeGuNCRE1KVW/aaj8H9LCvn+b/KjoMb7CZMDYxbfcEKc2LwVWmeomlVrHIdBnjbAkLbgX2kSZQqA==",
   "success": true,
-  "projectFilePath": "D:\\XCore\\XCore\\XCore.Api\\XCore.Api.csproj",
+  "projectFilePath": "C:\\Users\\flyns\\source\\repos\\XCore\\XCore.Api\\XCore.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\flyns\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\flyns\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

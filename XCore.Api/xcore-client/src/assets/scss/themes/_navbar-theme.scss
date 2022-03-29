@@ -3,7 +3,7 @@
   $accent: map-get($theme, accent); 
   
   .mat-toolbar {
-    background: linear-gradient(to bottom, mat-color($primary), mat-color($accent)) !important;
+    background: linear-gradient(135deg, mat-color($primary), mat-color($accent)) !important;
   } 
 }
 

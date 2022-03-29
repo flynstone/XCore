@@ -1,27 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "D:\\XCore\\XCore\\XCore.Repositories\\XCore.Repositories.csproj": {}
+    "C:\\Users\\flyns\\source\\repos\\XCore\\XCore.Repositories\\XCore.Repositories.csproj": {}
   },
   "projects": {
-    "D:\\XCore\\XCore\\XCore.Entities\\XCore.Entities.csproj": {
+    "C:\\Users\\flyns\\source\\repos\\XCore\\XCore.Entities\\XCore.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\XCore\\XCore\\XCore.Entities\\XCore.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\flyns\\source\\repos\\XCore\\XCore.Entities\\XCore.Entities.csproj",
         "projectName": "XCore.Entities",
-        "projectPath": "D:\\XCore\\XCore\\XCore.Entities\\XCore.Entities.csproj",
+        "projectPath": "C:\\Users\\flyns\\source\\repos\\XCore\\XCore.Entities\\XCore.Entities.csproj",
         "packagesPath": "C:\\Users\\flyns\\.nuget\\packages\\",
-        "outputPath": "D:\\XCore\\XCore\\XCore.Entities\\obj\\",
+        "outputPath": "C:\\Users\\flyns\\source\\repos\\XCore\\XCore.Entities\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
           "C:\\Users\\flyns\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -70,28 +64,22 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\XCore\\XCore\\XCore.Repositories\\XCore.Repositories.csproj": {
+    "C:\\Users\\flyns\\source\\repos\\XCore\\XCore.Repositories\\XCore.Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\XCore\\XCore\\XCore.Repositories\\XCore.Repositories.csproj",
+        "projectUniqueName": "C:\\Users\\flyns\\source\\repos\\XCore\\XCore.Repositories\\XCore.Repositories.csproj",
         "projectName": "XCore.Repositories",
-        "projectPath": "D:\\XCore\\XCore\\XCore.Repositories\\XCore.Repositories.csproj",
+        "projectPath": "C:\\Users\\flyns\\source\\repos\\XCore\\XCore.Repositories\\XCore.Repositories.csproj",
         "packagesPath": "C:\\Users\\flyns\\.nuget\\packages\\",
-        "outputPath": "D:\\XCore\\XCore\\XCore.Repositories\\obj\\",
+        "outputPath": "C:\\Users\\flyns\\source\\repos\\XCore\\XCore.Repositories\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
           "C:\\Users\\flyns\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -104,8 +92,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\XCore\\XCore\\XCore.Entities\\XCore.Entities.csproj": {
-                "projectPath": "D:\\XCore\\XCore\\XCore.Entities\\XCore.Entities.csproj"
+              "C:\\Users\\flyns\\source\\repos\\XCore\\XCore.Entities\\XCore.Entities.csproj": {
+                "projectPath": "C:\\Users\\flyns\\source\\repos\\XCore\\XCore.Entities\\XCore.Entities.csproj"
               }
             }
           }
@@ -134,7 +122,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

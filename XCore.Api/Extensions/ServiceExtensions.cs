@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -6,6 +7,7 @@ using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
 using XCore.Entities;
+using XCore.Entities.Models;
 using XCore.LoggerService;
 using XCore.Repositories;
 using XCore.Repositories.Interfaces;
@@ -104,6 +106,9 @@ namespace XCore.Api.Extensions
         {
             services.AddDbContext<XCoreDbContext>(opts =>
                 opts.UseSqlServer(configuration.GetConnectionString("sqlConnection"), (b => b.MigrationsAssembly("XCore.Api"))));
+
+            services.AddIdentity<User, IdentityRole>()
+                .AddEntityFrameworkStores<XCoreDbContext>();
         }
 
     }
