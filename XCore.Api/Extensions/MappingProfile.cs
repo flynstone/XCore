@@ -10,6 +10,8 @@ using XCore.Entities.DataTransferObjects.Backups;
 using XCore.Entities.DataTransferObjects.JobTitles;
 using XCore.Entities.DataTransferObjects.RuleTypes;
 using XCore.Entities.DataTransferObjects.Employees;
+using XCore.Entities.DataTransferObjects.Users;
+using XCore.Entities.Models;
 
 namespace XCore.Api.Extensions
 {
@@ -17,6 +19,11 @@ namespace XCore.Api.Extensions
     {
         public MappingProfile()
         {
+            // Identity Maps
+            CreateMap<UserForRegistrationDto, User>()
+                .ForMember(u => u.UserName, opt => opt.MapFrom(x => x.Email));
+
+            // Rental Project maps
             this.CreateMap<Customer, CustomerDto>().ReverseMap();
             this.CreateMap<CustomerForCreationDto, Customer>();
             this.CreateMap<CustomerForUpdateDto, Customer>();

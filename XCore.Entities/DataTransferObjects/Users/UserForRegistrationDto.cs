@@ -6,7 +6,6 @@ namespace XCore.Entities.DataTransferObjects.Users
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string UserName { get; set; }
 
         [Required(ErrorMessage = "Email is required.")]
         public string Email { get; set; }
@@ -16,7 +15,5 @@ namespace XCore.Entities.DataTransferObjects.Users
 
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
-
-        public string ClientURI { get; set; }
     }
 }
